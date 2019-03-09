@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+	
+	<title>Xenon - Dashboard</title>
+
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/xenon-core.css">
+	<link rel="stylesheet" href="assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="assets/css/xenon-components.css">
+	<link rel="stylesheet" href="assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+    <base target="_self">
+
+    
+    
+</head>
+<body class="page-body">
+
+	<div class="settings-pane">
+			
+		<a href="#" data-toggle="settings-pane" data-animate="true">
+			&times;
+		</a>
+		
+		<div class="settings-pane-inner">
+			
+			<div class="row">
+				
+				<div class="col-md-4">
+					
+					<div class="user-info">
+						
+						<div class="user-image">
+							<a href="extra-profile.html">
+								<img src="assets/images/user-2.png" class="img-responsive img-circle" />
+							</a>
+						</div>
+						
+						<div class="user-details">
+							
+							<h3>
+								<a href="extra-profile.html">John Smith</a>
+								
+								<!-- Available statuses: is-online, is-idle, is-busy and is-offline -->
+								<span class="user-status is-online"></span>
+							</h3>
+							
+							<p class="user-title">Web Developer</p>
+							
+							<div class="user-links">
+								<a href="extra-profile.html" class="btn btn-primary">Edit Profile</a>
+								<a href="extra-profile.html" class="btn btn-success">Upgrade</a>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="col-md-8 link-blocks-env">
+					
+					<div class="links-block left-sep">
+						<h4>
+							<span>Notifications</span>
+						</h4>
+						
+						<ul class="list-unstyled">
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk1" />
+								<label for="sp-chk1">Messages</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk2" />
+								<label for="sp-chk2">Events</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk3" />
+								<label for="sp-chk3">Updates</label>
+							</li>
+							<li>
+								<input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk4" />
+								<label for="sp-chk4">Server Uptime</label>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="links-block left-sep">
+						<h4>
+							<a href="#">
+								<span>Help Desk</span>
+							</a>
+						</h4>
+						
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Support Center
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Submit a Ticket
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Domains Protocol
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-angle-right"></i>
+									Terms of Service
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		
+	</div>
+	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+			
+		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+		<div class="sidebar-menu toggle-others fixed">
+			
+			<div class="sidebar-menu-inner">	
+				
+				<header class="logo-env">
+					
+					<!-- logo -->
+					<div class="logo">
+						<a href="ui-widgets.html" class="logo-expanded">
+							<img src="assets/images/logo@2x.png" width="80" alt="" />
+						</a>
+						
+						<a href="dashboard-1.html" class="logo-collapsed">
+							<img src="assets/images/logo-collapsed@2x.png" width="40" alt="" />
+						</a>
+					</div>
+					
+					<!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+					<div class="mobile-menu-toggle visible-xs">
+						<a href="#" data-toggle="user-info-menu">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-success">7</span>
+						</a>
+						
+						<a href="#" data-toggle="mobile-menu">
+							<i class="fa-bars"></i>
+						</a>
+					</div>
+					
+					<!-- This will open the popup with user profile settings, you can use for any purpose, just be creative -->
+					<div class="settings-icon">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</div>
+					
+								
+				</header>
+
+				
+						
+				<ul id="main-menu" class="main-menu">
+					<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+					<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+					<li>
+						<a href="ui-widgets.html">
+							<i class="linecons-star"></i>
+							<span class="title">首页</span>
+						</a>
+					</li>
+
+ <!--GAME----------------------------------------------------------------------------------------------------------------  -->
+
+					<li>
+						<a href="GAME-1.html">
+							<i class="linecons-cog"></i>
+							<span class="title">GAME</span>
+						</a>
+						<ul>
+							<li>
+								<a href="GAME-1.html">
+									<span class="title">新老用户</span>
+								</a>
+							</li>
+							<li>
+								<a href="GAME-2.html">
+									<span class="title">留存率</span>
+								</a>
+							</li>
+							<li>
+								<a href="GAME-3.html">
+									<span class="title">Top10</span>
+								</a>
+							</li>
+							<li>
+								<a href="GAME-4.html">
+									<span class="title">整点在线人数</span>
+								</a>
+							</li>
+							<li>
+								<a href="GAME-5.html">
+									<span class="title">上下线分析</span>
+								</a>
+							</li>
+							<li>
+								<a href="GAME-6.html">
+									<span class="title">版本分析</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+ <!--SHOP----------------------------------------------------------------------------------------------------------------  -->
+                    <li class="active opened active">
+						<a href="SHOP-1.html">
+							<i class="linecons-cog"></i>
+							<span class="title">SHOP</span>
+						</a>
+						<ul>
+                            <li>
+								<a href="SHOP-1.html">
+									<span class="title">针对用户的购买情况分析</span>
+								</a>
+							</li>
+							<li>
+								<a href="SHOP-2.html">
+									<span class="title">年消费情况</span>
+								</a>
+							</li>
+                            <li class="active">
+								<a href="SHOP-3.html">
+									<span class="title">各省总消费</span>
+								</a>
+							</li>
+							<li>
+								<a href="SHOP-4.html">
+									<span class="title">各全国省份、市区消费情况</span>
+								</a>
+							</li>
+							<li>
+								<a href="SHOP-5.html">
+									<span class="title">男性、女性的购买情况</span>
+								</a>
+							</li>
+							<li>
+								<a href="SHOP-6.html">
+									<span class="title">月季度消费情况</span>
+								</a>
+							</li>
+							<li>
+								<a href="SHOP-7.html">
+									<span class="title">十佳消费日</span>
+								</a>
+							</li>
+							<li>
+								<a href="SHOP-8.html">
+									<span class="title">订单金额与状态</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+ <!--HERO ----------------------------------------------------------------------------------------------------------------  -->
+                    <li>
+						<a href="HERO-1.html">
+							<i class="linecons-cog"></i>
+							<span class="title">HERO</span>
+						</a>
+						<ul>
+							<li>
+								<a href="HERO-1.html">
+									<span class="title">英雄胜率与使用次数</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-2.html">
+									<span class="title">玩家胜率与英雄使用</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-3.html">
+									<span class="title">KD前五各位置胜率</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-4.html">
+									<span class="title">KD后五各位置胜率</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-5.html">
+									<span class="title">需求 5</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-6.html">
+									<span class="title">需求 6</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-7.html">
+									<span class="title">需求 7</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-8.html">
+									<span class="title">需求 8</span>
+								</a>
+							</li>
+							<li>
+								<a href="HERO-9.html">
+									<span class="title">需求 9</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+						
+			</div>
+			
+		</div>
+		
+
+
+<!-- 右侧面板----------------------------------------- -->
+		<div class="main-content" style="width:100%;height:100%">
+
+    <div style="float:left">
+<!--图表开始----------------------------------------- -->
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+        // 使用
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/map'
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main')); 
+
+                var option = {
+                                title : {
+                                    text: '全国各省份市区近15年消费情况',
+                               
+                                    x:'center'
+                                },
+                                tooltip : {
+                                    trigger: 'item'
+                                },
+                                legend: {
+                                    orient: 'vertical',
+                                    x:'left',
+                                    data:['消费额']
+                                },
+                                dataRange: {
+                                    min: 1000000.0,
+                                    max: 8000000.0,
+                                    x: 'left',
+                                    y: 'bottom',
+                                    text:['高','低'],           // 文本，默认为数值文本
+                                    calculable : true
+                                },
+                                toolbox: {
+                                    show: true,
+                                    orient : 'vertical',
+                                    x: 'right',
+                                    y: 'center',
+                                    feature : {
+                                        mark : {show: true},
+                                        dataView : {show: true, readOnly: false},
+                                        restore : {show: true},
+                                       saveAsImage : {show: true}
+                                    }
+                                },
+                                roamController: {
+                                    show: true,
+                                    x: 'right',
+                                    mapTypeControl: {
+                                        'china': true
+                                    }
+                                },
+                                series : [
+                               
+                                    {
+                                    	   tooltip: {
+                                               trigger: 'item',
+                                               formatter: '{b} </br>{a}{c}'
+                                           },
+                                           name: '消费额: ',
+                                           type: 'map',
+                                           mapType: 'china',
+                                           mapLocation: {
+                                               x: 'left',
+                                               y: 'center',
+                                               width: '50%'
+                                           },
+                                           roam: true,
+                                           selectedMode : 'single',
+                                           itemStyle:{
+                                               //normal:{label:{show:true}},
+                                               emphasis:{label:{show:true}}
+                                           },
+                                        data:[
+                                            {name: '北京',value: 7586292.0},
+                                            {name: '天津',value: 5999258.0},
+                                            {name: '上海',value: 7771470.0},
+                                            {name: '重庆',value: 7321987.0},
+                                            {name: '河北',value: 5201174.0},
+                                            {name: '河南',value: 7384925.0},
+                                            {name: '云南',value: 4194384.0},
+                                            {name: '辽宁',value: 6816292.0},
+                                            {name: '黑龙江',value: 6716285.0},
+                                            {name: '湖南',value: 7277891.0},
+                                            {name: '安徽',value: 7198562.0},
+                                            {name: '山东',value: 7498562.0},
+                                            {name: '新疆',value: 3306441.0},
+                                            {name: '江苏',value: 7735854.0},
+                                            {name: '浙江',value: 7756422.0},
+                                            {name: '江西',value: 5448202.0},
+                                            {name: '湖北',value: 7399846.0},
+                                            {name: '广西',value: 4194384.0},
+                                            {name: '甘肃',value: 4288456.0},
+                                            {name: '山西',value: 5423664.0},
+                                            {name: '内蒙古',value: 2544565.0},
+                                            {name: '陕西',value: 5329665.0},
+                                            {name: '吉林',value: 6321470.0},
+                                            {name: '福建',value: 7299878.0},
+                                            {name: '贵州',value: 4188745.0},
+                                            {name: '广东',value: 7879849.0},
+                                            {name: '青海',value: 2877987.0},
+                                            {name: '西藏',value: 1327534.0},
+                                            {name: '四川',value: 7479630.0},
+                                            {name: '宁夏',value: 3907554.0},
+                                            {name: '海南',value: 4985641.0},
+                                            {name: '台湾',value: 3874565.0},
+                                            {name: '香港',value: 3258999.0},
+                                            {name: '澳门',value: 3415898.0}
+                                        ]
+                                    },
+                                ]
+                            };
+                var ecConfig = require('echarts/config');
+                myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+                    var selected = param.selected;
+                    var selectedProvince;
+                    var name;
+                    for (var i = 0, l = option.series[0].data.length; i < l; i++) {
+                        name = option.series[0].data[i].name;
+                        option.series[0].data[i].selected = selected[name];
+                        if (selected[name]) {
+                            selectedProvince = name;
+                        }
+                    }
+                    if (typeof selectedProvince == 'undefined') {
+                        option.series.splice(1);
+                        option.legend = null;
+                        option.dataRange = null;
+                        myChart.setOption(option, true);
+                        return;
+                    }
+                    option.series[1] = {
+                        name: '消费额度',
+                        type: 'map',
+                        mapType: selectedProvince,
+                        itemStyle:{
+                            normal:{label:{show:true}},
+                            emphasis:{label:{show:true}}
+                        },
+                        mapLocation: {
+                            x: '55%'
+                        },
+                        roam: true,
+                        data:[
+                            {name: '重庆市',value: 7321987.0},
+                            {name: '北京市',value: 7586292.0},
+                            {name: '天津市',value: 5999258.0},
+                            {name: '上海市',value: 7771470.0},
+                            {name: '香港',value: 3258999.0},
+                            {name: '澳门',value: 3415898.0},
+                            {name: '巴音郭楞蒙古自治州',value: Math.round(Math.random()*1000)},
+                            {name: '和田地区',value: Math.round(Math.random()*1000)},
+                            {name: '哈密地区',value: Math.round(Math.random()*1000)},
+                            {name: '阿克苏地区',value: Math.round(Math.random()*1000)},
+                            {name: '阿勒泰地区',value: Math.round(Math.random()*1000)},
+                            {name: '喀什地区',value: Math.round(Math.random()*1000)},
+                            {name: '塔城地区',value: Math.round(Math.random()*1000)},
+                            {name: '昌吉回族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '克孜勒苏柯尔克孜自治州',value: Math.round(Math.random()*1000)},
+                            {name: '吐鲁番地区',value: Math.round(Math.random()*1000)},
+                            {name: '伊犁哈萨克自治州',value: Math.round(Math.random()*1000)},
+                            {name: '博尔塔拉蒙古自治州',value: Math.round(Math.random()*1000)},
+                            {name: '乌鲁木齐市',value: Math.round(Math.random()*1000)},
+                            {name: '克拉玛依市',value: Math.round(Math.random()*1000)},
+                            {name: '阿拉尔市',value: Math.round(Math.random()*1000)},
+                            {name: '图木舒克市',value: Math.round(Math.random()*1000)},
+                            {name: '五家渠市',value: Math.round(Math.random()*1000)},
+                            {name: '石河子市',value: Math.round(Math.random()*1000)},
+                            {name: '那曲地区',value: Math.round(Math.random()*1000)},
+                            {name: '阿里地区',value: Math.round(Math.random()*1000)},
+                            {name: '日喀则地区',value: Math.round(Math.random()*1000)},
+                            {name: '林芝地区',value: Math.round(Math.random()*1000)},
+                            {name: '昌都地区',value: Math.round(Math.random()*1000)},
+                            {name: '山南地区',value: Math.round(Math.random()*1000)},
+                            {name: '拉萨市',value: Math.round(Math.random()*1000)},
+                            {name: '呼伦贝尔市',value: Math.round(Math.random()*1000)},
+                            {name: '阿拉善盟',value: Math.round(Math.random()*1000)},
+                            {name: '锡林郭勒盟',value: Math.round(Math.random()*1000)},
+                            {name: '鄂尔多斯市',value: Math.round(Math.random()*1000)},
+                            {name: '赤峰市',value: Math.round(Math.random()*1000)},
+                            {name: '巴彦淖尔市',value: Math.round(Math.random()*1000)},
+                            {name: '通辽市',value: Math.round(Math.random()*1000)},
+                            {name: '乌兰察布市',value: Math.round(Math.random()*1000)},
+                            {name: '兴安盟',value: Math.round(Math.random()*1000)},
+                            {name: '包头市',value: Math.round(Math.random()*1000)},
+                            {name: '呼和浩特市',value: Math.round(Math.random()*1000)},
+                            {name: '乌海市',value: Math.round(Math.random()*1000)},
+                            {name: '海西蒙古族藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '玉树藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '果洛藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '海南藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '海北藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '黄南藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '海东地区',value: Math.round(Math.random()*1000)},
+                            {name: '西宁市',value: Math.round(Math.random()*1000)},
+                            {name: '甘孜藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '阿坝藏族羌族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '凉山彝族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '绵阳市',value: Math.round(Math.random()*1000)},
+                            {name: '达州市',value: Math.round(Math.random()*1000)},
+                            {name: '广元市',value: Math.round(Math.random()*1000)},
+                            {name: '雅安市',value: Math.round(Math.random()*1000)},
+                            {name: '宜宾市',value: Math.round(Math.random()*1000)},
+                            {name: '乐山市',value: Math.round(Math.random()*1000)},
+                            {name: '南充市',value: Math.round(Math.random()*1000)},
+                            {name: '巴中市',value: Math.round(Math.random()*1000)},
+                            {name: '泸州市',value: Math.round(Math.random()*1000)},
+                            {name: '成都市',value: Math.round(Math.random()*1000)},
+                            {name: '资阳市',value: Math.round(Math.random()*1000)},
+                            {name: '攀枝花市',value: Math.round(Math.random()*1000)},
+                            {name: '眉山市',value: Math.round(Math.random()*1000)},
+                            {name: '广安市',value: Math.round(Math.random()*1000)},
+                            {name: '德阳市',value: Math.round(Math.random()*1000)},
+                            {name: '内江市',value: Math.round(Math.random()*1000)},
+                            {name: '遂宁市',value: Math.round(Math.random()*1000)},
+                            {name: '自贡市',value: Math.round(Math.random()*1000)},
+                            {name: '黑河市',value: Math.round(Math.random()*1000)},
+                            {name: '大兴安岭地区',value: Math.round(Math.random()*1000)},
+                            {name: '哈尔滨市',value: Math.round(Math.random()*1000)},
+                            {name: '齐齐哈尔市',value: Math.round(Math.random()*1000)},
+                            {name: '牡丹江市',value: Math.round(Math.random()*1000)},
+                            {name: '绥化市',value: Math.round(Math.random()*1000)},
+                            {name: '伊春市',value: Math.round(Math.random()*1000)},
+                            {name: '佳木斯市',value: Math.round(Math.random()*1000)},
+                            {name: '鸡西市',value: Math.round(Math.random()*1000)},
+                            {name: '双鸭山市',value: Math.round(Math.random()*1000)},
+                            {name: '大庆市',value: Math.round(Math.random()*1000)},
+                            {name: '鹤岗市',value: Math.round(Math.random()*1000)},
+                            {name: '七台河市',value: Math.round(Math.random()*1000)},
+                            {name: '酒泉市',value: Math.round(Math.random()*1000)},
+                            {name: '张掖市',value: Math.round(Math.random()*1000)},
+                            {name: '甘南藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '武威市',value: Math.round(Math.random()*1000)},
+                            {name: '陇南市',value: Math.round(Math.random()*1000)},
+                            {name: '庆阳市',value: Math.round(Math.random()*1000)},
+                            {name: '白银市',value: Math.round(Math.random()*1000)},
+                            {name: '定西市',value: Math.round(Math.random()*1000)},
+                            {name: '天水市',value: Math.round(Math.random()*1000)},
+                            {name: '兰州市',value: Math.round(Math.random()*1000)},
+                            {name: '平凉市',value: Math.round(Math.random()*1000)},
+                            {name: '临夏回族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '金昌市',value: Math.round(Math.random()*1000)},
+                            {name: '嘉峪关市',value: Math.round(Math.random()*1000)},
+                            {name: '普洱市',value: Math.round(Math.random()*1000)},
+                            {name: '红河哈尼族彝族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '文山壮族苗族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '曲靖市',value: Math.round(Math.random()*1000)},
+                            {name: '楚雄彝族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '大理白族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '临沧市',value: Math.round(Math.random()*1000)},
+                            {name: '迪庆藏族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '昭通市',value: Math.round(Math.random()*1000)},
+                            {name: '昆明市',value: Math.round(Math.random()*1000)},
+                            {name: '丽江市',value: Math.round(Math.random()*1000)},
+                            {name: '西双版纳傣族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '保山市',value: Math.round(Math.random()*1000)},
+                            {name: '玉溪市',value: Math.round(Math.random()*1000)},
+                            {name: '怒江傈僳族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '德宏傣族景颇族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '百色市',value: Math.round(Math.random()*1000)},
+                            {name: '河池市',value: Math.round(Math.random()*1000)},
+                            {name: '桂林市',value: Math.round(Math.random()*1000)},
+                            {name: '南宁市',value: Math.round(Math.random()*1000)},
+                            {name: '柳州市',value: Math.round(Math.random()*1000)},
+                            {name: '崇左市',value: Math.round(Math.random()*1000)},
+                            {name: '来宾市',value: Math.round(Math.random()*1000)},
+                            {name: '玉林市',value: Math.round(Math.random()*1000)},
+                            {name: '梧州市',value: Math.round(Math.random()*1000)},
+                            {name: '贺州市',value: Math.round(Math.random()*1000)},
+                            {name: '钦州市',value: Math.round(Math.random()*1000)},
+                            {name: '贵港市',value: Math.round(Math.random()*1000)},
+                            {name: '防城港市',value: Math.round(Math.random()*1000)},
+                            {name: '北海市',value: Math.round(Math.random()*1000)},
+                            {name: '怀化市',value: Math.round(Math.random()*1000)},
+                            {name: '永州市',value: Math.round(Math.random()*1000)},
+                            {name: '邵阳市',value: Math.round(Math.random()*1000)},
+                            {name: '郴州市',value: Math.round(Math.random()*1000)},
+                            {name: '常德市',value: Math.round(Math.random()*1000)},
+                            {name: '湘西土家族苗族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '衡阳市',value: Math.round(Math.random()*1000)},
+                            {name: '岳阳市',value: Math.round(Math.random()*1000)},
+                            {name: '益阳市',value: Math.round(Math.random()*1000)},
+                            {name: '长沙市',value: Math.round(Math.random()*1000)},
+                            {name: '株洲市',value: Math.round(Math.random()*1000)},
+                            {name: '张家界市',value: Math.round(Math.random()*1000)},
+                            {name: '娄底市',value: Math.round(Math.random()*1000)},
+                            {name: '湘潭市',value: Math.round(Math.random()*1000)},
+                            {name: '榆林市',value: Math.round(Math.random()*1000)},
+                            {name: '延安市',value: Math.round(Math.random()*1000)},
+                            {name: '汉中市',value: Math.round(Math.random()*1000)},
+                            {name: '安康市',value: Math.round(Math.random()*1000)},
+                            {name: '商洛市',value: Math.round(Math.random()*1000)},
+                            {name: '宝鸡市',value: Math.round(Math.random()*1000)},
+                            {name: '渭南市',value: Math.round(Math.random()*1000)},
+                            {name: '咸阳市',value: Math.round(Math.random()*1000)},
+                            {name: '西安市',value: Math.round(Math.random()*1000)},
+                            {name: '铜川市',value: Math.round(Math.random()*1000)},
+                            {name: '清远市',value: Math.round(Math.random()*1000)},
+                            {name: '韶关市',value: Math.round(Math.random()*1000)},
+                            {name: '湛江市',value: Math.round(Math.random()*1000)},
+                            {name: '梅州市',value: Math.round(Math.random()*1000)},
+                            {name: '河源市',value: Math.round(Math.random()*1000)},
+                            {name: '肇庆市',value: Math.round(Math.random()*1000)},
+                            {name: '惠州市',value: Math.round(Math.random()*8000)},
+                            {name: '茂名市',value: Math.round(Math.random()*1000)},
+                            {name: '江门市',value: Math.round(Math.random()*1000)},
+                            {name: '阳江市',value: Math.round(Math.random()*1000)},
+                            {name: '云浮市',value: Math.round(Math.random()*1000)},
+                            {name: '广州市',value: Math.round(Math.random()*100000)},
+                            {name: '汕尾市',value: Math.round(Math.random()*1000)},
+                            {name: '揭阳市',value: Math.round(Math.random()*1000)},
+                            {name: '珠海市',value: Math.round(Math.random()*1000)},
+                            {name: '佛山市',value: Math.round(Math.random()*10000)},
+                            {name: '潮州市',value: Math.round(Math.random()*1000)},
+                            {name: '汕头市',value: Math.round(Math.random()*1000)},
+                            {name: '深圳市',value: Math.round(Math.random()*10000)},
+                            {name: '东莞市',value: Math.round(Math.random()*10000)},
+                            {name: '中山市',value: Math.round(Math.random()*10000)},
+                            {name: '延边朝鲜族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '吉林市',value: Math.round(Math.random()*1000)},
+                            {name: '白城市',value: Math.round(Math.random()*1000)},
+                            {name: '松原市',value: Math.round(Math.random()*1000)},
+                            {name: '长春市',value: Math.round(Math.random()*1000)},
+                            {name: '白山市',value: Math.round(Math.random()*1000)},
+                            {name: '通化市',value: Math.round(Math.random()*1000)},
+                            {name: '四平市',value: Math.round(Math.random()*1000)},
+                            {name: '辽源市',value: Math.round(Math.random()*1000)},
+                            {name: '承德市',value: Math.round(Math.random()*1000)},
+                            {name: '张家口市',value: Math.round(Math.random()*1000)},
+                            {name: '保定市',value: Math.round(Math.random()*1000)},
+                            {name: '唐山市',value: Math.round(Math.random()*1000)},
+                            {name: '沧州市',value: Math.round(Math.random()*1000)},
+                            {name: '石家庄市',value: Math.round(Math.random()*1000)},
+                            {name: '邢台市',value: Math.round(Math.random()*1000)},
+                            {name: '邯郸市',value: Math.round(Math.random()*1000)},
+                            {name: '秦皇岛市',value: Math.round(Math.random()*1000)},
+                            {name: '衡水市',value: Math.round(Math.random()*1000)},
+                            {name: '廊坊市',value: Math.round(Math.random()*1000)},
+                            {name: '恩施土家族苗族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '十堰市',value: Math.round(Math.random()*1000)},
+                            {name: '宜昌市',value: Math.round(Math.random()*1000)},
+                            {name: '襄樊市',value: Math.round(Math.random()*1000)},
+                            {name: '黄冈市',value: Math.round(Math.random()*1000)},
+                            {name: '荆州市',value: Math.round(Math.random()*1000)},
+                            {name: '荆门市',value: Math.round(Math.random()*1000)},
+                            {name: '咸宁市',value: Math.round(Math.random()*1000)},
+                            {name: '随州市',value: Math.round(Math.random()*1000)},
+                            {name: '孝感市',value: Math.round(Math.random()*1000)},
+                            {name: '武汉市',value: Math.round(Math.random()*1000)},
+                            {name: '黄石市',value: Math.round(Math.random()*1000)},
+                            {name: '神农架林区',value: Math.round(Math.random()*1000)},
+                            {name: '天门市',value: Math.round(Math.random()*1000)},
+                            {name: '仙桃市',value: Math.round(Math.random()*1000)},
+                            {name: '潜江市',value: Math.round(Math.random()*1000)},
+                            {name: '鄂州市',value: Math.round(Math.random()*1000)},
+                            {name: '遵义市',value: Math.round(Math.random()*1000)},
+                            {name: '黔东南苗族侗族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '毕节地区',value: Math.round(Math.random()*1000)},
+                            {name: '黔南布依族苗族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '铜仁地区',value: Math.round(Math.random()*1000)},
+                            {name: '黔西南布依族苗族自治州',value: Math.round(Math.random()*1000)},
+                            {name: '六盘水市',value: Math.round(Math.random()*1000)},
+                            {name: '安顺市',value: Math.round(Math.random()*1000)},
+                            {name: '贵阳市',value: Math.round(Math.random()*1000)},
+                            {name: '烟台市',value: Math.round(Math.random()*1000)},
+                            {name: '临沂市',value: Math.round(Math.random()*1000)},
+                            {name: '潍坊市',value: Math.round(Math.random()*1000)},
+                            {name: '青岛市',value: Math.round(Math.random()*1000)},
+                            {name: '菏泽市',value: Math.round(Math.random()*1000)},
+                            {name: '济宁市',value: Math.round(Math.random()*1000)},
+                            {name: '德州市',value: Math.round(Math.random()*1000)},
+                            {name: '滨州市',value: Math.round(Math.random()*1000)},
+                            {name: '聊城市',value: Math.round(Math.random()*1000)},
+                            {name: '东营市',value: Math.round(Math.random()*1000)},
+                            {name: '济南市',value: Math.round(Math.random()*1000)},
+                            {name: '泰安市',value: Math.round(Math.random()*1000)},
+                            {name: '威海市',value: Math.round(Math.random()*1000)},
+                            {name: '日照市',value: Math.round(Math.random()*1000)},
+                            {name: '淄博市',value: Math.round(Math.random()*1000)},
+                            {name: '枣庄市',value: Math.round(Math.random()*1000)},
+                            {name: '莱芜市',value: Math.round(Math.random()*1000)},
+                            {name: '赣州市',value: Math.round(Math.random()*1000)},
+                            {name: '吉安市',value: Math.round(Math.random()*1000)},
+                            {name: '上饶市',value: Math.round(Math.random()*1000)},
+                            {name: '九江市',value: Math.round(Math.random()*1000)},
+                            {name: '抚州市',value: Math.round(Math.random()*1000)},
+                            {name: '宜春市',value: Math.round(Math.random()*1000)},
+                            {name: '南昌市',value: Math.round(Math.random()*1000)},
+                            {name: '景德镇市',value: Math.round(Math.random()*1000)},
+                            {name: '萍乡市',value: Math.round(Math.random()*1000)},
+                            {name: '鹰潭市',value: Math.round(Math.random()*1000)},
+                            {name: '新余市',value: Math.round(Math.random()*1000)},
+                            {name: '南阳市',value: Math.round(Math.random()*1000)},
+                            {name: '信阳市',value: Math.round(Math.random()*1000)},
+                            {name: '洛阳市',value: Math.round(Math.random()*1000)},
+                            {name: '驻马店市',value: Math.round(Math.random()*1000)},
+                            {name: '周口市',value: Math.round(Math.random()*1000)},
+                            {name: '商丘市',value: Math.round(Math.random()*1000)},
+                            {name: '三门峡市',value: Math.round(Math.random()*1000)},
+                            {name: '新乡市',value: Math.round(Math.random()*1000)},
+                            {name: '平顶山市',value: Math.round(Math.random()*1000)},
+                            {name: '郑州市',value: Math.round(Math.random()*1000)},
+                            {name: '安阳市',value: Math.round(Math.random()*1000)},
+                            {name: '开封市',value: Math.round(Math.random()*1000)},
+                            {name: '焦作市',value: Math.round(Math.random()*1000)},
+                            {name: '许昌市',value: Math.round(Math.random()*1000)},
+                            {name: '濮阳市',value: Math.round(Math.random()*1000)},
+                            {name: '漯河市',value: Math.round(Math.random()*1000)},
+                            {name: '鹤壁市',value: Math.round(Math.random()*1000)},
+                            {name: '大连市',value: Math.round(Math.random()*1000)},
+                            {name: '朝阳市',value: Math.round(Math.random()*1000)},
+                            {name: '丹东市',value: Math.round(Math.random()*1000)},
+                            {name: '铁岭市',value: Math.round(Math.random()*1000)},
+                            {name: '沈阳市',value: Math.round(Math.random()*1000)},
+                            {name: '抚顺市',value: Math.round(Math.random()*1000)},
+                            {name: '葫芦岛市',value: Math.round(Math.random()*1000)},
+                            {name: '阜新市',value: Math.round(Math.random()*1000)},
+                            {name: '锦州市',value: Math.round(Math.random()*1000)},
+                            {name: '鞍山市',value: Math.round(Math.random()*1000)},
+                            {name: '本溪市',value: Math.round(Math.random()*1000)},
+                            {name: '营口市',value: Math.round(Math.random()*1000)},
+                            {name: '辽阳市',value: Math.round(Math.random()*1000)},
+                            {name: '盘锦市',value: Math.round(Math.random()*1000)},
+                            {name: '忻州市',value: Math.round(Math.random()*1000)},
+                            {name: '吕梁市',value: Math.round(Math.random()*1000)},
+                            {name: '临汾市',value: Math.round(Math.random()*1000)},
+                            {name: '晋中市',value: Math.round(Math.random()*1000)},
+                            {name: '运城市',value: Math.round(Math.random()*1000)},
+                            {name: '大同市',value: Math.round(Math.random()*1000)},
+                            {name: '长治市',value: Math.round(Math.random()*1000)},
+                            {name: '朔州市',value: Math.round(Math.random()*1000)},
+                            {name: '晋城市',value: Math.round(Math.random()*1000)},
+                            {name: '太原市',value: Math.round(Math.random()*1000)},
+                            {name: '阳泉市',value: Math.round(Math.random()*1000)},
+                            {name: '六安市',value: Math.round(Math.random()*1000)},
+                            {name: '安庆市',value: Math.round(Math.random()*1000)},
+                            {name: '滁州市',value: Math.round(Math.random()*1000)},
+                            {name: '宣城市',value: Math.round(Math.random()*1000)},
+                            {name: '阜阳市',value: Math.round(Math.random()*1000)},
+                            {name: '宿州市',value: Math.round(Math.random()*1000)},
+                            {name: '黄山市',value: Math.round(Math.random()*1000)},
+                            {name: '巢湖市',value: Math.round(Math.random()*1000)},
+                            {name: '亳州市',value: Math.round(Math.random()*1000)},
+                            {name: '池州市',value: Math.round(Math.random()*1000)},
+                            {name: '合肥市',value: Math.round(Math.random()*1000)},
+                            {name: '蚌埠市',value: Math.round(Math.random()*1000)},
+                            {name: '芜湖市',value: Math.round(Math.random()*1000)},
+                            {name: '淮北市',value: Math.round(Math.random()*1000)},
+                            {name: '淮南市',value: Math.round(Math.random()*1000)},
+                            {name: '马鞍山市',value: Math.round(Math.random()*1000)},
+                            {name: '铜陵市',value: Math.round(Math.random()*1000)},
+                            {name: '南平市',value: Math.round(Math.random()*1000)},
+                            {name: '三明市',value: Math.round(Math.random()*1000)},
+                            {name: '龙岩市',value: Math.round(Math.random()*1000)},
+                            {name: '宁德市',value: Math.round(Math.random()*1000)},
+                            {name: '福州市',value: Math.round(Math.random()*1000)},
+                            {name: '漳州市',value: Math.round(Math.random()*1000)},
+                            {name: '泉州市',value: Math.round(Math.random()*1000)},
+                            {name: '莆田市',value: Math.round(Math.random()*1000)},
+                            {name: '厦门市',value: Math.round(Math.random()*1000)},
+                            {name: '丽水市',value: Math.round(Math.random()*1000)},
+                            {name: '杭州市',value: Math.round(Math.random()*10000)},
+                            {name: '温州市',value: Math.round(Math.random()*10000)},
+                            {name: '宁波市',value: Math.round(Math.random()*10000)},
+                            {name: '舟山市',value: Math.round(Math.random()*1000)},
+                            {name: '台州市',value: Math.round(Math.random()*10000)},
+                            {name: '金华市',value: Math.round(Math.random()*1000)},
+                            {name: '衢州市',value: Math.round(Math.random()*1000)},
+                            {name: '绍兴市',value: Math.round(Math.random()*10000)},
+                            {name: '嘉兴市',value: Math.round(Math.random()*10000)},
+                            {name: '湖州市',value: Math.round(Math.random()*1000)},
+                            {name: '盐城市',value: Math.round(Math.random()*1000)},
+                            {name: '徐州市',value: Math.round(Math.random()*1000)},
+                            {name: '南通市',value: Math.round(Math.random()*1000)},
+                            {name: '淮安市',value: Math.round(Math.random()*1000)},
+                            {name: '苏州市',value: Math.round(Math.random()*1000)},
+                            {name: '宿迁市',value: Math.round(Math.random()*1000)},
+                            {name: '连云港市',value: Math.round(Math.random()*1000)},
+                            {name: '扬州市',value: Math.round(Math.random()*1000)},
+                            {name: '南京市',value: Math.round(Math.random()*1000)},
+                            {name: '泰州市',value: Math.round(Math.random()*1000)},
+                            {name: '无锡市',value: Math.round(Math.random()*1000)},
+                            {name: '常州市',value: Math.round(Math.random()*1000)},
+                            {name: '镇江市',value: Math.round(Math.random()*1000)},
+                            {name: '吴忠市',value: Math.round(Math.random()*1000)},
+                            {name: '中卫市',value: Math.round(Math.random()*1000)},
+                            {name: '固原市',value: Math.round(Math.random()*1000)},
+                            {name: '银川市',value: Math.round(Math.random()*1000)},
+                            {name: '石嘴山市',value: Math.round(Math.random()*1000)},
+                            {name: '儋州市',value: Math.round(Math.random()*1000)},
+                            {name: '文昌市',value: Math.round(Math.random()*1000)},
+                            {name: '乐东黎族自治县',value: Math.round(Math.random()*1000)},
+                            {name: '三亚市',value: Math.round(Math.random()*1000)},
+                            {name: '琼中黎族苗族自治县',value: Math.round(Math.random()*1000)},
+                            {name: '东方市',value: Math.round(Math.random()*1000)},
+                            {name: '海口市',value: Math.round(Math.random()*1000)},
+                            {name: '万宁市',value: Math.round(Math.random()*1000)},
+                            {name: '澄迈县',value: Math.round(Math.random()*1000)},
+                            {name: '白沙黎族自治县',value: Math.round(Math.random()*1000)},
+                            {name: '琼海市',value: Math.round(Math.random()*1000)},
+                            {name: '昌江黎族自治县',value: Math.round(Math.random()*1000)},
+                            {name: '临高县',value: Math.round(Math.random()*1000)},
+                            {name: '陵水黎族自治县',value: Math.round(Math.random()*1000)},
+                            {name: '屯昌县',value: Math.round(Math.random()*1000)},
+                            {name: '定安县',value: Math.round(Math.random()*1000)},
+                            {name: '保亭黎族苗族自治县',value: Math.round(Math.random()*1000)},
+                            {name: '五指山市',value: Math.round(Math.random()*1000)}
+                        ]
+                    };
+                    option.legend = {
+                        x:'right',
+                        data:['消费额度']
+                    };
+                    option.dataRange = {
+                        orient: 'horizontal',
+                        x: 'right',
+                        min: 0,
+                        max: 1000,
+                        color:['#12708d','#bbe9f7'],
+                        text:['高','低'],           // 文本，默认为数值文本
+                        splitNumber:0
+                    };
+                    myChart.setOption(option, true);
+                });
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+    </script>
+
+					<div class="col-md-8"  style="float:left;margin-top:100px; margin-bottom:0px;margin-right:50px;margin-left:50px;"  >
+					
+					<!-- Colored panel, remember to add "panel-color" before applying the color -->
+					<div class="panel panel-color panel-info "><!-- Add class "collapsed" to minimize the panel -->
+						<div class="panel-heading">
+							<h3 class="panel-title">针对全国总消费情况分析</h3>
+							
+							<div class="panel-options">
+								<a href="#">
+									<i class="linecons-cog"></i>
+								</a>
+								
+								<a href="#" data-toggle="panel">
+									<span class="collapse-icon">&ndash;</span>
+									<span class="expand-icon">+</span>
+								</a>
+								
+								<a href="#" data-toggle="reload">
+									<i class="fa-rotate-right"></i>
+								</a>
+								
+								<a href="#" data-toggle="remove">
+									&times;
+								</a>
+							</div>
+						</div>
+						
+						<div class="panel-body">
+							
+							<font size="2">  首先通过全国情况分析，全国排名前十的省份分别是广东、浙江、江苏、上海、北京、山东、四川、湖北、河南、福建，也就是地图上深蓝色的部分，
+							    结合其经济、人口、地理位置分析，我们可以发现这些省份都是经济、人口发达的大省，在以后的发展过程中，我们可以重点关注这几个省，利用其优势促进电子商务的发展。
+							</font></br>
+							</br>
+							<font size="2">  而对排名较为靠后的省份，从地图上我们可以发现，基本分布在内陆交通不发达地区以及经济较为落后地区，
+							在以后的发展中，可以通过减免邮费，或加大促销力度来刺激其电子商务消费的发展。
+							</font></br>
+							</br>
+							<font size="2">对排名第一的广东省和排名第二的浙江省进行分析，我们可以看出消费能力和各市区的GDP有很大关系，以后可以通过对GDP不发达市区进行大力度的优惠活动从而刺激其消费力度的发展
+											进一步提升其省份的消费能力。
+							</font>
+						</div>
+					</div>
+					
+				</div>
+
+
+<!--图表结束----------------------------------------- -->
+
+    </div>
+
+
+		</div>
+
+
+<!-- 右侧面板结束----------------------------------------- -->
+						
+		<!-- start: Chat Section -->
+		<div id="chat" class="fixed">
+			
+			<div class="chat-inner">
+			
+				
+				<h2 class="chat-header">
+					<a href="#" class="chat-close" data-toggle="chat">
+						<i class="fa-plus-circle rotate-45deg"></i>
+					</a>
+					
+					Chat
+					<span class="badge badge-success is-hidden">0</span>
+				</h2>
+				
+				<script type="text/javascript">
+				// Here is just a sample how to open chat conversation box
+				jQuery(document).ready(function($)
+				{
+					var $chat_conversation = $(".chat-conversation");
+					
+					$(".chat-group a").on('click', function(ev)
+					{
+						ev.preventDefault();
+						
+						$chat_conversation.toggleClass('is-open');
+						
+						$(".chat-conversation textarea").trigger('autosize.resize').focus();
+					});
+					
+					$(".conversation-close").on('click', function(ev)
+					{
+						ev.preventDefault();
+						$chat_conversation.removeClass('is-open');
+					});
+				});
+				</script>
+				
+				
+				<div class="chat-group">
+					<strong>Favorites</strong>
+					
+					<a href="#"><span class="user-status is-online"></span> <em>Catherine J. Watkins</em></a>
+					<a href="#"><span class="user-status is-online"></span> <em>Nicholas R. Walker</em></a>
+					<a href="#"><span class="user-status is-busy"></span> <em>Susan J. Best</em></a>
+					<a href="#"><span class="user-status is-idle"></span> <em>Fernando G. Olson</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Brandon S. Young</em></a>
+				</div>
+				
+				
+				<div class="chat-group">
+					<strong>Work</strong>
+					
+					<a href="#"><span class="user-status is-busy"></span> <em>Rodrigo E. Lozano</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Robert J. Garcia</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Daniel A. Pena</em></a>
+				</div>
+				
+				
+				<div class="chat-group">
+					<strong>Other</strong>
+					
+					<a href="#"><span class="user-status is-online"></span> <em>Dennis E. Johnson</em></a>
+					<a href="#"><span class="user-status is-online"></span> <em>Stuart A. Shire</em></a>
+					<a href="#"><span class="user-status is-online"></span> <em>Janet I. Matas</em></a>
+					<a href="#"><span class="user-status is-online"></span> <em>Mindy A. Smith</em></a>
+					<a href="#"><span class="user-status is-busy"></span> <em>Herman S. Foltz</em></a>
+					<a href="#"><span class="user-status is-busy"></span> <em>Gregory E. Robie</em></a>
+					<a href="#"><span class="user-status is-busy"></span> <em>Nellie T. Foreman</em></a>
+					<a href="#"><span class="user-status is-busy"></span> <em>William R. Miller</em></a>
+					<a href="#"><span class="user-status is-idle"></span> <em>Vivian J. Hall</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Melinda A. Anderson</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Gary M. Mooneyham</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Robert C. Medina</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Dylan C. Bernal</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Marc P. Sanborn</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Kenneth M. Rochester</em></a>
+					<a href="#"><span class="user-status is-offline"></span> <em>Rachael D. Carpenter</em></a>
+				</div>
+			
+			</div>
+			
+			<!-- conversation template -->
+			<div class="chat-conversation">
+				
+				<div class="conversation-header">
+					<a href="#" class="conversation-close">
+						&times;
+					</a>
+					
+					<span class="user-status is-online"></span>
+					<span class="display-name">Arlind Nushi</span> 
+					<small>Online</small>
+				</div>
+				
+				<ul class="conversation-body">	
+					<li>
+						<span class="user">Arlind Nushi</span>
+						<span class="time">09:00</span>
+						<p>Are you here?</p>
+					</li>
+					<li class="odd">
+						<span class="user">Brandon S. Young</span>
+						<span class="time">09:25</span>
+						<p>This message is pre-queued.</p>
+					</li>
+					<li>
+						<span class="user">Brandon S. Young</span>
+						<span class="time">09:26</span>
+						<p>Whohoo!</p>
+					</li>
+					<li class="odd">
+						<span class="user">Arlind Nushi</span>
+						<span class="time">09:27</span>
+						<p>Do you like it?</p>
+					</li>
+				</ul>
+				
+				<div class="chat-textarea">
+					<textarea class="form-control autogrow" placeholder="Type your message"></textarea>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- end: Chat Section -->
+		
+		
+	</div>
+	
+	
+	<div class="page-loading-overlay">
+		<div class="loader-2"></div>
+	</div>
+	
+
+
+
+	<!-- Bottom Scripts -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/xenon-api.js"></script>
+	<script src="assets/js/xenon-toggles.js"></script>
+
+
+	<!-- Imported scripts on this page -->
+	<script src="assets/js/xenon-widgets.js"></script>
+	<script src="assets/js/devexpress-web-14.1/js/globalize.min.js"></script>
+	<script src="assets/js/devexpress-web-14.1/js/dx.chartjs.js"></script>
+	<script src="assets/js/toastr/toastr.min.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="assets/js/xenon-custom.js"></script>
+
+</body>
+</html>
